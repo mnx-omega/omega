@@ -1,0 +1,24 @@
+<!Doctype HTML>
+
+<html>
+<head>
+    <title>&Omega;</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="CutiveMono.ttf" rel="stylesheet">
+    <script src="md5.min.js"></script>
+</head>
+
+<body>
+    <input id="num" type="text" placeholder="123456"/>
+    <button id="pu" onclick="go()">Go</button>
+</body>
+<script>
+function go() {
+    var salt = "tude";
+    var input = document.getElementById('num').value;
+    var check = md5(salt+input);
+    var key = md5(input+salt);
+    console.log(check + " + " + key)
+}
+</script>
+</html>

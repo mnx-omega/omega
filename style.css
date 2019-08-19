@@ -1,0 +1,29 @@
+body {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-image: url('bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button {
+    background: #00000077;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Cutive Mono', monospace;
+}
+
+button {
+    cursor: pointer;
+}
