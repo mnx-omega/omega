@@ -17,7 +17,7 @@ function go() {
     var input = document.getElementById('num').value;
     var check = md5(salt+input);
     var key = md5(input+salt);
-    if (check == 'c4f2b71aa2565ee9fc8309d37866f28a') window.location = `http://${key}.ml/`;
+    if (check == 'c4f2b71aa2565ee9fc8309d37866f28a') window.location = `http://bit.ly/${key}/`;
     else alert('wrong');
 }
 </script>
